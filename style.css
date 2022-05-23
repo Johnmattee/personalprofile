@@ -1,0 +1,252 @@
+body{
+    background-color: black;
+    color:white;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav > ul li{
+    padding:0.5em;
+    margin-left: 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+color: rgb(153, 72, 85);
+transition: 0.4s;
+}
+
+section{
+    padding: 3em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+ .img img{
+    width: 15em;
+    height: auto;
+    border-radius: 4em 1.5em 4em 1.5em;
+    margin-right: 16vw;
+}
+.describe{
+    margin-left: 7em;
+    line-height: 1.5;
+    padding: 0.4em;
+}
+
+.describe h5{
+    font-family:cursive;
+    font-size: 1.4rem;
+}
+.describe h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3.6rem;
+}
+
+.describe p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.describe span{
+    color: rgb(131, 42, 57);
+}
+
+.describe a{
+    text-decoration: none;
+    color: white;
+    background:rgb(131, 42, 57);
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.7em;
+    border-radius: 0.7em;
+    font-size: 1.2rem;
+    font-family: helvetica;
+}
+
+.describe a:hover{
+    background:rgb(71, 9, 19);
+    transition: 0.3s;
+}
+
+img{
+    width:3em;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-top: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.first>div, .second > div, .third > div{
+    margin-bottom: 1em;
+}
+
+.education img, .experience img, .game img{
+background: rgb(131, 42, 57);
+width: 3em;
+margin-left:1em;
+}
+
+.education, .experience, .game{
+    display: flex;
+}
+
+.first, .second, .third{
+    border-left: 3px solid rgb(131, 44, 59);
+    padding: 2em;
+    line-height:2em;
+    font-family: cursive;
+}
+
+#form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#form h3{
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+    border-bottom:2px solid rgb(131, 42, 57);
+}
+
+#form > form{
+    width: 40vw;
+}
+
+
+.form-row{
+    margin-bottom:1.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type='text'], .form-row input[type='email'], select, textarea{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    outline-color: rgb(131, 42, 57);
+    width:100%;
+}
+
+.form-row label{
+    margin-bottom: 0.6em;
+}
+
+#form > form input[type='submit']{
+    color: white;
+    background:rgb(131, 42, 57);
+    font-family: helvetica;
+    border: none;
+    padding: 1em 1.5em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:9em;
+}
+
+footer > ul{
+ display: flex; 
+ list-style-type: none;  
+ margin-top:1em;
+}
+
+footer > ul a{
+    text-decoration: none;
+}
+footer > ul li{
+    margin-left: 1em;
+}
+
+.github img, .linkedin img, .twitter img, .facebook img{
+background: grey;
+border-radius: 50%;
+width: 2.4em;
+}
+
+.moveup img{
+    position: fixed;
+    bottom: 3em;
+    left: 86vw;
+    color: rgb(131, 42, 57);
+}
+
+@media (max-width:400px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction:column;
+        text-align: center;
+    }
+    nav ul li{
+        border-bottom: 1px solid gray
+    }
+    section{
+        flex-direction: column-reverse;
+    }
+    .describe{
+        text-align: center;
+        margin: auto;
+    }
+    .describe h2{
+        font-size: 2rem;
+    }
+    .describe a{
+        padding: 0.7em 1.4em;
+    }
+
+    article{
+        display: block;
+        margin: 1.5em auto 0;
+    }
+    .first, .second, .third{
+        border-left:none;
+        border-bottom: 2px solid rgb(29, 28, 28);
+    }
+
+    #form > form{
+        width: 80vw;
+    }
+}
+

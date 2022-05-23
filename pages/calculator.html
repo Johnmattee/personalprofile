@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div><img src="../images/squid.svg" alt="squid"></div>
+            <ul>
+                <li><a href="../index.html">about</a></li>
+                <li><a href="../index.html#form">Contact</a></li>
+                <li><a href="register.html">register</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--calculator with table-->
+    <div class="container1"> 
+        <table id='tab'>
+            <caption>table calculator</caption>
+            <tr class ='head'><th colspan="5">
+            <div class ='display1'>0</div>
+            </th>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>+</td>
+                <td class = 'red1'>DEL</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>*</td>
+                <td class = 'red1'>CE</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>/</td>
+                <td rowspan="2">=</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>0</td>
+                <td>%</td>
+                <td>-</td>
+            </tr>
+                </table>
+    </div>
+
+    <!--Calculator with flex box code goes here-->
+    <div class="container">
+        <h3>flexbox calculator</h3>
+        <div class = 'display2'>0</div>
+        <div class="flex">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>+</button>
+            <button class='red1'>DEL</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>X</button>
+            <button class ='red1'>CE</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>/</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button>%</button>
+            <button class='equal'>=</button>
+        </div>
+    </div>
+    <div class='moveup'><a href=""><img src="../images/moveup.svg" alt="moveup"></a></div>
+
+
+    <footer>
+        <p>Squid Dev &copy; 2022. All rights reserved.</p>
+        <ul>
+            <li class='github'><a href="https://www.gitub.com/johnmattee"><img src="../images/github.svg" alt="github"></a></li>
+            <li class='facebook'><a href="https://www.facebook.com/taiwo.john.5074"><img src="../images/facebook.svg" alt="facebook"></a></li>
+            <li class='linkedin'><a href="https://www.linkedin.com/in/ajayi-john-67834011b"><img src="../images/linkedin.svg" alt="linkedin"></a></li>
+            <li class=twitter><a href="https://www.twitter.com/ajayitaiwojohn1"><img src="../images/twitter.svg" alt="twitter"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

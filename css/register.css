@@ -1,0 +1,147 @@
+body{
+    background-color: black;
+    color:white;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav > ul li{
+    padding:0.5em;
+    margin-left: 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+color: rgb(153, 72, 85);
+transition: 0.4s;
+}
+
+img{
+    width: 3em;
+}
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 2em;
+}
+
+section h3{
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+    border-bottom:2px solid rgb(131, 42, 57);
+}
+
+section form{
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr), auto;
+    grid-gap: 1em;
+}
+
+.form-row{
+    margin-bottom:1.5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row label{
+    margin-bottom: 0.6em;
+}
+
+.form-row input[type='text'], .form-row input[type='password'], .form-row input[type='tel'], select{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.4em;
+    padding: 0.8em 0.5em;
+    outline-color: rgb(131, 42, 57);
+    width:100%;
+}
+
+
+section input[type='submit']{
+    color: white;
+    background:rgb(131, 42, 57);
+    font-family: helvetica;
+    border: none;
+    padding: 0.8em 0.5em;
+    font-size: 1rem;
+    width: 8em;
+    text-align: center;
+    grid-row: 6/7;
+    margin-bottom:1em;
+}
+
+section p{
+     font-family: cursive;
+}
+
+section p a:link{
+    color: rgb(136, 78, 136);
+}
+
+section p a:hover{
+    color:rgb(131, 42, 57);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:9em;
+}
+
+footer > ul{
+ display: flex; 
+ list-style-type: none;  
+ margin-top:1em;
+}
+
+footer > ul a{
+    text-decoration: none;
+}
+footer > ul li{
+    margin-left: 1em;
+}
+
+.github img, .linkedin img, .twitter img, .facebook img{
+background: grey;
+border-radius: 50%;
+width: 2.4em;
+}
+
+.moveup img{
+    position: fixed;
+    bottom: 3em;
+    left: 86vw;
+    color: rgb(131, 42, 57);
+}

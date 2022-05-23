@@ -1,0 +1,197 @@
+body{
+    background-color: black;
+    color:white;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav > ul li{
+    padding:0.5em;
+    margin-left: 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+color: rgb(153, 72, 85);
+transition: 0.4s;
+}
+
+img{
+    width:3em;
+}
+
+/*calculator  with table css */
+
+.container1{
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 2em;
+    }
+
+.container1 caption{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom:1em;
+    font-family: helvetica;
+}
+    
+    table{
+        border-spacing: 0.2em;
+        background-color: rgb(29, 27, 27);
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    table, td{
+        border: 1px solid black;
+        border-radius: 0.2em;
+    }
+    
+     td{
+        text-align: center;
+        padding: 2em;
+        font-size: 0.98rem;
+        font-weight: bold;
+        font-family:monospace; 
+    }
+    th{
+        text-align: left;
+    }
+    .display1{
+        background-color: rgb(131, 211, 131);
+        padding: 0.2em;
+        border: none;
+        margin:0.2em auto 0.1em;
+        font-size: 4rem;
+        text-align: right;
+        color: black !important;
+    }
+    
+    .red1{
+        background-color: rgb(197, 13, 13);
+        color: white;
+    }
+    
+    td{
+        background-color: rgb(143, 154, 165);
+        color: white;
+    }
+    
+    .red1:hover{
+        background-color: rgb(131, 29, 29);
+        cursor: pointer;
+    }
+    
+    td:hover{
+        background-color: grey;
+        cursor: pointer;
+    }
+    
+
+    /* calculator with flex box CSS */
+
+    .container{
+        background-color: rgb(29, 27, 27);
+        width: 25em;
+        margin: auto;
+        padding: 0.3em;
+        height: fit-content;
+        font-family: Roboto;
+        font-weight: bold;
+    }
+    
+    .display2{
+        background-color: rgb(131, 211, 131);
+        color: black!important;
+        font-size: 3.8rem;
+        margin-bottom: 4px;
+        margin-top: 2px;
+        border: none;
+        outline: none;
+        direction: rtl;
+    }
+    
+    .flex{
+        display: flex;
+        flex-wrap:wrap;
+        width:100%;
+        height: inherit;
+        justify-content: space-between;
+    }
+    
+    button{
+        flex: 1 20%;
+        padding: 1.4em;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 1.2em;
+        outline: inherit;
+        box-shadow: none;
+        border: 1px solid rgb(29, 27, 27);
+    }
+    
+    button:hover{
+        background-color: grey;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    .equal{
+        flex: 2 40%;
+    }
+    
+    .moveup img{
+        position: fixed;
+        bottom: 3em;
+        left: 86vw;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:9em;
+    }
+    
+    footer > ul{
+     display: flex; 
+     list-style-type: none;  
+     margin-top:1em;
+    }
+    
+    footer > ul a{
+        text-decoration: none;
+    }
+    footer > ul li{
+        margin-left: 1em;
+    }
+    
+    .github img, .linkedin img, .twitter img, .facebook img{
+    background: grey;
+    border-radius: 50%;
+    width: 2.4em;
+    }
